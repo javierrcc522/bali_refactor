@@ -10,7 +10,6 @@ class OrderItemsController < ApplicationController
       order_item.save
     else
     @item = @order.order_items.new(item_params)
-    redirect_to products_path
     end
     if @order.save
       session[:order_id] = @order.id
