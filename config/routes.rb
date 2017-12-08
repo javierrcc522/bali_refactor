@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+  root to: "products#index"
+
   get '/sign_up' => 'users#new'
   post '/users' => 'users#create'
 
@@ -7,9 +11,7 @@ Rails.application.routes.draw do
   post '/sign_in' => 'sessions#create'
   get 'sign_out' => 'sessions#destroy'
 
-  root to: "products#index"
-
-  resources :products, only: [:index]
+  resources :products
   resources :order_items
   resource :cart, only: [:show]
 
