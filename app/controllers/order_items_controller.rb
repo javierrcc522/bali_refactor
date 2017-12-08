@@ -14,9 +14,10 @@ class OrderItemsController < ApplicationController
     if @order.save
       session[:order_id] = @order.id
       flash[:notice] = "This product has been added to your cart."
+      redirect_to cart_path
     else
       flash[:notice] = "Please add items."
-      redirect_to products_path
+      redirect_to root_path
     end
   end
 
