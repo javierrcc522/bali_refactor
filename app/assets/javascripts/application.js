@@ -15,3 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require materialize-sprockets
+
+$('document').ready(function(){
+  setTimeout(function(){
+    $('#flash').slideUp();
+  }, 2000);
+});
