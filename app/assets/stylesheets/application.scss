@@ -13,9 +13,16 @@
  *= require_tree .
  *= require_self
  */
-
 @import "materialize";
 
 #flash {
   text-align: center;
+}
+
+nav {
+  color: black
+}
+
+nav a {
+  color: black
 }

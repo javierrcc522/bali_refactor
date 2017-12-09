@@ -28,13 +28,28 @@ class OrderItemsController < ApplicationController
     @order.save
   end
 
+
   def destroy
     @order = current_order
     @item = @order.order_items.find(params[:id])
     @item.destroy
-    @order.save
-    redirect_to cart_path
+    if @order.save
+      session[:order_id] = @order.id
+      flash[:notice] = "Product has been removed from your order."
+      @total = current_order.total_price
+      respond_to do |format|
+        format.html { redirect_to cart_path }
+        format.js { render 'carts/destroy' }
+      end
+    else
+      flash[:notice] = "there was some erros "
+      respond_to do |format|
+        format.html { redirect_to cart_path }
+        format.js { render 'carts/destroy' }
+      end
+    end
   end
+
 
   private
 
