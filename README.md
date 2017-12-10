@@ -1,4 +1,4 @@
-# README
+# E-commerce fix website 
 
 E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
 
