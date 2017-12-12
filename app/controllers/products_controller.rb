@@ -14,10 +14,20 @@ class ProductsController < ApplicationController
     @product = Product.new(product_params)
     if @product.save
       redirect_to '/'
+      flash[:notice] = "Product has been saved"
     else
       render :new
     end
   end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    flash[:notice] = "Item deleted"
+    redirect_to '/'
+  end
+
+
 
   private
   def product_params
