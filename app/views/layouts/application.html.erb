@@ -19,6 +19,9 @@
           <li><%= link_to "Sign up", 'sign_up' %></li>
           <li><%= link_to "Sign in", '/sign_in' %></li>
         <% end %>
+        <% if current_user && current_user.admin%>
+        <li><%= link_to "add new products", new_product_path %></li>
+        <% end %>
       </ul>
     </div>
   <body>
