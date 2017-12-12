@@ -13,3 +13,8 @@ class Seed
 end
 
 Seed.begin
+
+User.create(email: "test@gmail.com",
+            password: "123456",
+            admin: true)
+p "created a #{User.count} javis admin"
