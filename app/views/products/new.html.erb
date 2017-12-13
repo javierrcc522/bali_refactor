@@ -4,6 +4,6 @@
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
     Price: <%= f.number_field :price %>
+    <%= f.hidden_field :image, value: "http://lorempixel.com/70/80/food/3" %>
   <%= f.submit "Submit" %>
-
 <% end %>

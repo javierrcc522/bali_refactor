@@ -15,11 +15,12 @@ _Main developer quit job and I got hired to fix it and I did by making the follo
 * _Add product delete functionality for admins._
 * _Add admin flash messages for adding and deleting products._
 * _Add product validations._
-* _Add admin links to navbar so admins can easily add, update and delete products._
+* _Add admin links to nav-bar so admins can easily add, update and delete products._
 * _Fix the row height for products, which can quickly become uneven._
 
-
-
+## Testing Admin functionality.
+* _email: test@gmail.com_
+* _password: 123456_
 
 
 
