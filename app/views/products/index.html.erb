@@ -3,7 +3,7 @@
 <div class="row">
   <div class="section">
   <% @products.each do |product| %>
-    <div class="col s4">
+    <div class = "col s12 m6 l4">
         <h4 id="clickMe"><%= link_to product.name, product_path(product), remote: true%></h4>
         <div id='product_detail_<%=product.id%>'>
           <p><%= product.description %></p>

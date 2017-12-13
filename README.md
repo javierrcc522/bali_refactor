@@ -1,9 +1,55 @@
-# E-commerce fix website 
+# _E-Commerce Site 12.08.2017_
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
+#### By _**Javier J**_
 
-To set up:
+## Description and Project Goals
+_Main developer quit job and I got hired to fix it and I did by making the following changes._
 
-* `rake db:setup`
+## Changes Made and Fixes
+* _Add AJAX so users can add products to their shopping cart really fast without having to reload the page._
+* _Add AJAX so users can hide/show the details of all products._
+* _Add AJAX so users can add items to their cart and have them show on the main nav-bar._
 
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+* _Ensure that users can't order a negative number of items._
+* _Add flash messages for signing up, signing in and signing out._
+* _Add product delete functionality for admins._
+* _Add admin flash messages for adding and deleting products._
+* _Add product validations._
+* _Add admin links to navbar so admins can easily add, update and delete products._
+* _Fix the row height for products, which can quickly become uneven._
+
+
+
+
+
+
+## Setup/Installation Requirements
+_Uses `bcrypt` and `materialize`._
+_Run the following commands in Terminal:_
+
+1. `$ git clone` [this repository](https://github.com/javierrcc522/bali_refactor.git)
+2. `$ cd bali_refactor`
+3. `$ bundle install`
+4. `$ rails:db:create`
+5. `$ rails:db:migrate`
+6. `$ rails:db:test:prepare`
+7. `$ rails:db:seed`
+8. `$ rails s`
+9. _Navigate to localhost:3000_
+
+## Known Bugs
+* _No yet found._
+
+## Support and contact details
+_If you have questions, comments, or concerns, please contact [Javi](javierrcc522@gmail.com)._
+
+## Technologies Used
+* _AJAX_
+* _Ruby-on-Rails_
+* _ActiveRecord_
+
+
+### License
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2017 **_Javier Jimenez_**
