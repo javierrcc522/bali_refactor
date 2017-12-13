@@ -14,7 +14,7 @@ class Seed
 
   def generate_products
     20.times do |i|
-      Product.create!(name: Faker::Lorem.word, price: rand(10...100), description: Faker::Lorem.sentence(5, false, 0).chop)
+      Product.create!(image: Faker::LoremPixel.image("70x80", false, 'food', 3) , name: Faker::Lorem.word, price: rand(10...100), description: Faker::Lorem.sentence(5, false, 0).chop)
     end
     p "created a #{Product.count} javis products"
   end

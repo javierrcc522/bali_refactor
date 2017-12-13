@@ -20,13 +20,18 @@
 }
 
 nav {
-  color: black
+  color: black;
 }
 
 nav a {
-  color: black
+  color: black;
 }
 
 nav li {
-  color: white
+  color: white;
+}
+
+#clickMe:hover a {
+  cursor: pointer;
+  color: lightblue;
 }
