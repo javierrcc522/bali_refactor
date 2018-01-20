@@ -33,10 +33,10 @@ _Run the following commands in Terminal:_
 1. `$ git clone` [this repository](https://github.com/javierrcc522/bali_refactor.git)
 2. `$ cd bali_refactor`
 3. `$ bundle install`
-4. `$ rails:db:create`
-5. `$ rails:db:migrate`
-6. `$ rails:db:test:prepare`
-7. `$ rails:db:seed`
+4. `$ rails db:create`
+5. `$ rails db:migrate`
+6. `$ rails db:test:prepare`
+7. `$ rails db:seed`
 8. `$ rails s`
 9. _Navigate to localhost:3000_
 
