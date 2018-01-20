@@ -18,6 +18,8 @@ _Main developer quit job and I got hired to fix it and I did by making the follo
 * _Add admin links to nav-bar so admins can easily add, update and delete products._
 * _Fix the row height for products, which can quickly become uneven._
 
+![Screenshot](/img/pic1.png)
+
 ## Testing Admin functionality.
 * _email: test@gmail.com_
 * _password: 123456_
@@ -39,7 +41,7 @@ _Run the following commands in Terminal:_
 9. _Navigate to localhost:3000_
 
 ## Known Bugs
-* _No yet found._
+* _make sure postgres is running in your machine if not run postgres._
 
 ## Support and contact details
 _If you have questions, comments, or concerns, please contact [Javi](javierrcc522@gmail.com)._
